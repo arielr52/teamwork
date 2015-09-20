@@ -8,6 +8,8 @@ phonecatControllers.controller('PhoneListCtrl', ['$scope', 'Phone',
   function($scope, Phone) {
     $scope.phones = Phone.query();
     $scope.orderProp = 'age';
+    $scope.category = 'Overall';
+    $scope.categories = ['Overall','Java','AngularJS','ERI','NEXEN-frontend','NEXEN-API'];
   }]);
 
 phonecatControllers.controller('PhoneDetailCtrl', ['$scope', '$routeParams', 'Phone',
