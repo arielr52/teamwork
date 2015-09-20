@@ -1,0 +1,36 @@
+[
+  {
+    "name": "Dasher",
+    "categories": [
+      {
+        "category": "Overall",
+        "rate": 3.5
+      },
+      {
+        "category": "Java",
+        "rate": 4.2
+      }
+    ],
+    "phone": "412-xxx-xxxx",
+    "email": ""
+  },
+  {
+    "name": "Dancer",
+    "categories": [
+      {
+        "category": "Overall",
+        "rate": 3.5
+      },
+      {
+        "category": "AngularJS",
+        "rate": 4.5
+      },
+      {
+        "category": "Java",
+        "rate": 2.2
+      }
+    ],
+    "phone": "",
+    "email": ""
+  }
+]

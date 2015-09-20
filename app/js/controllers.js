@@ -4,12 +4,13 @@
 
 var phonecatControllers = angular.module('phonecatControllers', []);
 
-phonecatControllers.controller('PhoneListCtrl', ['$scope', 'Phone',
-  function($scope, Phone) {
+phonecatControllers.controller('PhoneListCtrl', ['$scope', 'Phone','Peoples',
+  function($scope, Phone,Peoples) {
     $scope.phones = Phone.query();
+    $scope.peoples = Peoples.query();
     $scope.orderProp = 'age';
     $scope.category = 'Overall';
-    $scope.categories = ['Overall','Java','AngularJS','ERI','NEXEN-frontend','NEXEN-API'];
+    $scope.categories = ['Overall','Java','AngularJS','SQL','QA','Requirements'];
   }]);
 
 phonecatControllers.controller('PhoneDetailCtrl', ['$scope', '$routeParams', 'Phone',
