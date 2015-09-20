@@ -12,14 +12,14 @@
       }
     ],
     "phone": "412-xxx-xxxx",
-    "email": ""
+    "email": "dasher@email.com"
   },
   {
     "name": "Dancer",
     "categories": [
       {
         "category": "Overall",
-        "rate": 3.5
+        "rate": 4.1
       },
       {
         "category": "AngularJS",

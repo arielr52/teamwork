@@ -11,6 +11,12 @@ phonecatControllers.controller('PhoneListCtrl', ['$scope', 'Phone','Peoples',
     $scope.orderProp = 'age';
     $scope.category = 'Overall';
     $scope.categories = ['Overall','Java','AngularJS','SQL','QA','Requirements'];
+    $scope.getRating= function(person){
+      console.log(person);
+      var rate= person.categories.filter(function(value){
+        return value.category==$scope.category})[0].rate;
+      return rate;
+    }
   }]);
 
 phonecatControllers.controller('PhoneDetailCtrl', ['$scope', '$routeParams', 'Phone',

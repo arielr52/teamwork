@@ -1,8 +1,7 @@
-< class="container-fluid">
-< class="row">
 <div class="col-md-2">
     <!--Sidebar content-->
 
+    <!--
     Search: <input ng-model="query">
     Sort by:
     <select ng-model="orderProp">
@@ -10,7 +9,7 @@
         <option value="age">Newest</option>
     </select>
     <br>
-
+-->
     <div ng-repeat="item in categories">
         <input type="radio" name ="category" ng-model="$parent.category" ng-value="item"> {{item}}
     </div>
@@ -22,11 +21,14 @@
 
     <ul class="phones">
         <li ng-repeat="person in peoples "
-            class="thumbnail phone-listing">
+            class="thumbnail ">
             <p>{{person.name}}</p>
+            <p>{{getRating(person)}}</p>
+            <p>{{person.email}}</p>
         </li>
     </ul>
 
+    <!--
     <ul class="phones">
         <li ng-repeat="phone in phones | filter:query | orderBy:orderProp"
             class="thumbnail phone-listing">
@@ -36,7 +38,7 @@
             <p>{{phone.snippet}}</p>
         </li>
     </ul>
-
+    -->
 </div>
 </div>
 </div>
